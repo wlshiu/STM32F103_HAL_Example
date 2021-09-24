@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{18141FAA-7F56-4FDF-B0B7-195E00DBEB27}</ProjectGuid>
+    <BSP_ID>KEIL:Keil/STM32F1xx_DFP</BSP_ID>
+    <BSP_VERSION>2.2.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+    <TargetExt>.elf</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\USER;..\..\..\OBJ;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\HALLIB\STM32F1xx_HAL_Driver\Inc;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\KEY;..\..\..\HARDWARE\TIMER;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_HAL_DRIVER;STM32F103xE;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+    <KeilSettingsContainer>
+      <KeilCPUType>Cortex-M3</KeilCPUType>
+    </KeilSettingsContainer>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\USER;..\..\..\OBJ;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\HALLIB\STM32F1xx_HAL_Driver\Inc;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\KEY;..\..\..\HARDWARE\TIMER;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_HAL_DRIVER;STM32F103xE;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\USER\main.c" />
+    <ClCompile Include="..\..\..\USER\stm32f1xx_it.c" />
+    <ClCompile Include="..\..\..\USER\system_stm32f1xx.c" />
+    <ClCompile Include="..\..\..\USER\stm32f1xx_hal_msp.c" />
+    <ClCompile Include="..\..\..\CORE\startup_stm32f103xe.s" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_usart.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c" />
+    <ClCompile Include="..\..\..\SYSTEM\delay\delay.c" />
+    <ClCompile Include="..\..\..\SYSTEM\sys\sys.c" />
+    <ClCompile Include="..\..\..\SYSTEM\usart\usart.c" />
+    <ClCompile Include="..\..\..\HARDWARE\LED\led.c" />
+    <ClCompile Include="..\..\..\HARDWARE\KEY\key.c" />
+    <ClCompile Include="..\..\..\HARDWARE\TIMER\timer.c" />
+    <None Include="mcu.props" />
+    <ClInclude Include="..\..\..\CORE\core_cm3.h" />
+    <ClInclude Include="..\..\..\CORE\cmsis_armcc.h" />
+    <ClInclude Include="..\..\..\CORE\core_cmFunc.h" />
+    <ClInclude Include="..\..\..\CORE\core_cmInstr.h" />
+    <ClInclude Include="..\..\..\CORE\core_cmSimd.h" />
+    <None Include="..\..\..\readme.txt" />
+    <ClInclude Include="$(BSP_ROOT)\Device\Include\stm32f10x.h" />
+    <None Include="Experiment_08_TimerInterrupts-Debug.vgdbsettings" />
+    <None Include="Experiment_08_TimerInterrupts-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+  </ItemGroup>
+</Project>

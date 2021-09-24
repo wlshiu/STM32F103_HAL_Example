@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{dcb93b1c-e622-4094-b6b0-ad1b16167733}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{2b5387e8-b070-4ef8-a045-6de4f1bc09c5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{55183093-dd16-45a6-b8ce-42af384c6c83}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\USER">
+      <UniqueIdentifier>{7d2c50b0-7da7-4222-94ee-c0cbb3b3fdde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CORE">
+      <UniqueIdentifier>{b9b1f6c1-9b35-48d0-ba94-1dd3129420c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\HALLIB">
+      <UniqueIdentifier>{73e8e2ec-c1fe-4538-996e-77413900a1e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\SYSTEM">
+      <UniqueIdentifier>{d1b1e9c3-7cb3-4c66-be1c-fa4e53945e61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\HARDWARE">
+      <UniqueIdentifier>{6413a9dd-8456-4d83-b88f-125ddcf97b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\USMART">
+      <UniqueIdentifier>{ed0eb555-99a0-419e-bb3d-ae1b25b14c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\README">
+      <UniqueIdentifier>{0a99ddd7-f683-43da-a593-39406b40f771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{5f35ab5a-5948-41d3-97e2-d78528982e10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USER">
+      <UniqueIdentifier>{d0c19b57-6ee3-4242-99da-94b7e811bc08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\CORE">
+      <UniqueIdentifier>{0ee51058-53bc-4961-ba16-7eb367a4dc42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\HALLIB">
+      <UniqueIdentifier>{e14c2d4f-eaad-4267-86b8-6abb2547444e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\SYSTEM">
+      <UniqueIdentifier>{a0977274-13ae-47fd-b902-e02be93ce3db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\HARDWARE">
+      <UniqueIdentifier>{b9964686-b301-4c7b-907e-412ee912c945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USMART">
+      <UniqueIdentifier>{a96a107c-9212-4d77-b731-a315196185f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\README">
+      <UniqueIdentifier>{8cd44a4f-434e-4f08-9cf4-340b1648ea46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{74223bfe-0727-4ccb-ba72-fb28ca4dd137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{7711c68f-8d3a-475e-82fc-91186a9d7f19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\USER\main.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USER\stm32f1xx_it.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USER\system_stm32f1xx.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USER\stm32f1xx_hal_msp.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CORE\startup_stm32f103xe.s">
+      <Filter>Source files\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_usart.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_sram.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_fsmc.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dac.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dac_ex.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi_ex.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HALLIB\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_can.c">
+      <Filter>Source files\HALLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\delay\delay.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\sys\sys.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\usart\usart.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\LED\led.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\LCD\lcd.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\KEY\key.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\CAN\can.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USMART\usmart.c">
+      <Filter>Source files\USMART</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USMART\usmart_config.c">
+      <Filter>Source files\USMART</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USMART\usmart_str.c">
+      <Filter>Source files\USMART</Filter>
+    </ClCompile>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClInclude Include="..\..\..\CORE\core_cm3.h">
+      <Filter>Header files\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CORE\cmsis_armcc.h">
+      <Filter>Header files\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CORE\core_cmFunc.h">
+      <Filter>Header files\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CORE\core_cmInstr.h">
+      <Filter>Header files\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CORE\core_cmSimd.h">
+      <Filter>Header files\CORE</Filter>
+    </ClInclude>
+    <None Include="..\..\..\readme.txt">
+      <Filter>Header files\README</Filter>
+    </None>
+    <ClInclude Include="$(BSP_ROOT)\Device\Include\stm32f10x.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <None Include="Experiment_26_CAN_ControllerAreaNetwork-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="Experiment_26_CAN_ControllerAreaNetwork-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>

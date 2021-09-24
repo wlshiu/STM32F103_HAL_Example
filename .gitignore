@@ -1,0 +1,84 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+*.depend
+*.layout
+obj/*
+bin/*
+*.7z
+*.gz
+*cscope*
+GPATH
+GRTAGS
+GTAGS
+ID
+tags
+*.axf
+*.iex
+*.uvguix.*
+*.uvoptx
+*.crf
+*.htm
+*.lnp
+*.dep
+*.bin
+*.lst
+*.swp
+*.depend
+*.elay
+*.Bak
+*.scvd
+*.sct
+*.dbgconf
+**/ArInp.Scr
+**/JLinkSettings.ini
+**/DebugConfig/*
